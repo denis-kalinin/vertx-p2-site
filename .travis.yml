@@ -1,0 +1,11 @@
+language: java
+cache:
+  directories:
+  - "$HOME/.m2"
+#install: 
+#  - mvn -N io.takari:maven:wrapper
+#before_script:
+#  - chmod +x mvnw
+#before_script: chmod +x mvnw
+script: >-
+  mvn --global-settings ./src/ci-maven-global-settings.xml
